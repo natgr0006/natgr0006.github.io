@@ -1,0 +1,480 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #636d6e;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.btn {
+    font-size: 16px;
+    color: #fdf4d7;
+    background-color: #2f9e2f;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    font-weight: bold;
+}
+
+.main__content {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/truck-001.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.main__content_inner {
+    padding-top: 20vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.left__content {
+    color: #fff;
+    background-color: #333333;
+    max-width: 300px;
+    border-radius: 5px;
+}
+
+.form__inner {
+    padding: 25px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.form__title {
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.form__subtile {
+    padding-bottom: 20px;
+}
+
+.content__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.left__input {
+    padding: 15px;
+    margin-bottom: 30px;
+    border-color: #ddd;
+    border-radius: 5px;
+}
+
+.start {
+    max-width: 180px;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.start:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.right__content {
+    color: #fff;
+    max-width: 500px;
+    text-align: center;
+}
+
+.right__title {
+    font-size: 70px;
+    line-height: 100px;
+    padding-bottom: 27px;
+    font-weight: bold;
+}
+
+.right__subtile {
+    font-size: 30px;
+    display: inline;
+    line-height: 40px;
+}
+
+.right__text {
+    font-size: 40px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    line-height: 40px;
+}
+
+.right__text span {
+    background-color: #fe551e;
+}
+
+.right__counter {
+    text-align: center;
+    font-size: 32px;
+}
+
+
+/*======================================Advantages============================*/
+
+.advantages {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.advantages__title,
+.reviews__title,
+.criteria__main__title {
+    font-size: 42px;
+    padding-bottom: 90px;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+}
+
+.advantages__title::after,
+.reviews__title::after,
+.criteria__main__title::after {
+    content: "";
+    width: 40px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #0d7ff2;
+}
+
+.advantages__items {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.advantages__item {
+    min-width: 250px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.adv_icon {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    padding-bottom: 2px;
+}
+
+.advantages__item_title {
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+/*======================================Mentor============================*/
+
+.mentor {
+    margin-top: 160px;
+    margin-bottom: 160px;
+}
+
+.mentor__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mentor__image {
+    max-width: 630px;
+    max-height: 420px;
+    object-fit: cover;
+    padding: 5px;
+}
+
+.mentor__text {
+    max-height: 420px;
+    padding-left: 30px;
+}
+
+.mentor__title {
+    text-transform: uppercase;
+    font-size: 38px;
+    padding-bottom: 40px;
+    line-height: 38px;
+    position: relative;
+}
+
+.mentor__title::after {
+    content: "";
+    width: 40px;
+    height: 2px;
+    position: absolute;
+    top: 75%;
+    left: 0;
+    background-color: #0d7ff2;
+}
+
+.mentor-btn {
+    margin-top: 60px;
+    display: inline-block;
+    margin-left: 20%;
+    border-radius: 5px;
+}
+
+.mentor__text {
+    line-height: 30px;
+}
+
+
+/*==============================================Criteria===================================*/
+
+.criteria {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #7fc47f;
+}
+
+.criteria__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.criteria__icon {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.criteria__item {
+    max-width: 320px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin-bottom: 20px;
+    line-height: 24px;
+    border-radius: 5px;
+}
+
+.criteria__title {
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #000;
+}
+
+.centr {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.consult {
+    margin-top: 40px;
+}
+
+
+/*============================================Contacts===================================*/
+
+.contacts {
+    background-color: #7fc47f;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    line-height: 20px;
+    color: black;
+}
+
+
+/*==============================================Footer=====================================*/
+
+.footer {
+    background-color: #111111;
+    color: #9a929f;
+    padding-top: 46px;
+    padding-bottom: 46px;
+}
+
+
+/*===========================================Menu=============================================*/
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 18px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.navbar a:hover,
+.active {
+    background: #2f9e2f;
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.main {}
+
+
+/*===========================================Media Quaries=====================================*/
+
+@media (max-width: 575px) {
+    .main__content_inner {
+        padding-top: 3vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .left__content {
+        max-width: 100%;
+    }
+    .left__input {
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+    .right__title {
+        font-size: 25px;
+        line-height: 30px;
+        padding-bottom: 10px;
+        padding-top: 15px;
+    }
+    .right__subtile {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .right__text {
+        font-size: 20px;
+        padding-top: 30px;
+        padding-bottom: 5px;
+        line-height: 30px;
+    }
+    .right__counter {
+        font-size: 20px;
+    }
+    .advantages {
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    .advantages__title,
+    .reviews__title,
+    .criteria__main__title {
+        font-size: 38px;
+        line-height: 40px;
+        padding-bottom: 90px;
+    }
+    .advantages__items {
+        flex-direction: column;
+    }
+    .mentor {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .mentor__inner {
+        display: flex;
+        flex-direction: column;
+    }
+    .mentor__image {
+        display: none;
+    }
+    .criteria__list {
+        flex-direction: column;
+    }
+    .criteria__item {
+        max-width: 100%;
+    }
+    .revews__items {
+        flex-direction: column;
+    }
+    .reviewers__item {
+        min-width: 100%;
+    }
+    /***************/
+    .right__content {
+        padding-left: 20px;
+    }
+    /* sm (>=576 и <=767) */
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .right__content {
+        padding-left: 20px;
+    }
+}
+
+.main__content_inner {
+    padding-bottom: 3vh;
+}
+
+.right__content {
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.advantages {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.advantages__title,
+.reviews__title,
+.criteria__main__title {
+    font-size: 38px;
+    line-height: 40px;
+    padding-bottom: 90px;
+}
+
+
+/* md (>=768 и <=991) */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .right__content {
+        padding-left: 20px;
+    }
+}
+
+
+/* lg (>=992 и <=1199) */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .right__content {
+        padding-left: 20px;
+    }
+}
+
+
+/* xl (>=1200) */
+
+@media (min-width: 1200px) {}
